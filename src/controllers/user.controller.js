@@ -10,7 +10,7 @@ export const deliveryLogin = asyncHandler(async (req, res, next) => {
     return next(new ApiError(400, "mobileNo or password is missing!"));
   }
 
-  if (password !== "PetPuja@123" || password !== "QuickPick@123") {
+  if (password !== "QuickPick@123") {
     return next(new ApiError(400, "password is not correct!"));
   }
 
